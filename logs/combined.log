@@ -1,0 +1,11 @@
+{"clientVersion":"6.4.1","level":"error","name":"PrismaClientInitializationError","service":"user-service"}
+{"clientVersion":"6.4.1","level":"error","name":"PrismaClientInitializationError","service":"user-service"}
+{"clientVersion":"6.4.1","level":"error","name":"PrismaClientInitializationError","service":"user-service"}
+{"clientVersion":"6.4.1","level":"error","name":"PrismaClientInitializationError","service":"user-service"}
+{"level":"info","message":"SELECT `teckTest`.`Member`.`id`, `teckTest`.`Member`.`code`, `teckTest`.`Member`.`name`, `teckTest`.`Member`.`createdAt`, `teckTest`.`Member`.`updatedAt` FROM `teckTest`.`Member` WHERE 1=1","service":"user-service"}
+{"level":"info","message":"[]","service":"user-service"}
+{"level":"info","message":"SELECT `teckTest`.`Borrow`.`id`, `teckTest`.`Borrow`.`memberId`, `teckTest`.`Borrow`.`bookId`, `teckTest`.`Borrow`.`borrowDate`, `teckTest`.`Borrow`.`returnDate` FROM `teckTest`.`Borrow` WHERE `teckTest`.`Borrow`.`memberId` IN (?,?,?)","service":"user-service"}
+{"level":"info","message":"[\"1d9ea28e-0f7d-4b7d-b521-52680a018024\",\"6cc36b72-be96-433c-9f84-e4037c0f30c1\",\"b60a5267-8f18-4c99-83a5-5ea20176b167\"]","service":"user-service"}
+{"level":"info","message":"SELECT `teckTest`.`Penalty`.`id`, `teckTest`.`Penalty`.`memberId`, `teckTest`.`Penalty`.`startDate`, `teckTest`.`Penalty`.`endDate` FROM `teckTest`.`Penalty` WHERE `teckTest`.`Penalty`.`memberId` IN (?,?,?)","service":"user-service"}
+{"level":"info","message":"[\"1d9ea28e-0f7d-4b7d-b521-52680a018024\",\"6cc36b72-be96-433c-9f84-e4037c0f30c1\",\"b60a5267-8f18-4c99-83a5-5ea20176b167\"]","service":"user-service"}
+{"level":"info","message":"Member.findMany took 61ms","service":"user-service"}
