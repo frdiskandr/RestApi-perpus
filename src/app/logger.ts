@@ -4,8 +4,6 @@ const Logger = winston.createLogger({
     level: "info",
     format: winston.format.json(),
     defaultMeta: { service: "user-service" },
-    handleExceptions: true,
-    handleRejections: true,
     transports: [
         new winston.transports.Console(),
         // new winston.transports.File({
