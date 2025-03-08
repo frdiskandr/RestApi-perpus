@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx nodemon ./index.ts",
     "start": "node api/index.ts",
-    "build":"echo hai"
+    "build":"echo hai",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^6.4.1",
