@@ -12,7 +12,7 @@ const swaggerOptions: swaggerJSDoc.Options = {
     },
     servers: [
       {
-        url: "http://localhost:3000",
+        url: "https://rest-api-perpus.vercel.app",
         description: "Development server",
       },
     ],
@@ -23,7 +23,7 @@ const swaggerOptions: swaggerJSDoc.Options = {
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
 
 function setupSwager(app: express.Application) {
-  app.use("/apiDocs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+  app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 }
 
 export default setupSwager;
